@@ -1,5 +1,7 @@
 # Flask Skeleton - 
 
+[![pipeline status](http://192.168.2.150/simple/docker-cloud-flask-demo/badges/master/pipeline.svg)](http://192.168.2.150/simple/docker-cloud-flask-demo/commits/master)
+
 Flask starter project... https://cloud.docker.com
 
 ## Quick Start
