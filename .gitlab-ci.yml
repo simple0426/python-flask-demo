@@ -1,6 +1,7 @@
 stages:
   - style
   - test
+  - deploy
 
 pep8:
   stage: style
@@ -25,3 +26,9 @@ unittest-py34:
     - tox -e py34
   tags:
     - python3.4
+
+docker-deploy:
+  stage: deploy
+  script:
+    - docker build -t flask-demo .
+    - docker run -id -p 5000:500 flask-demo 
