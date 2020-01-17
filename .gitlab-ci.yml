@@ -32,3 +32,5 @@ docker-deploy:
   script:
     - docker build -t flask-demo .
     - docker run -id -p 5000:500 flask-demo 
+  tags:
+    - shell
