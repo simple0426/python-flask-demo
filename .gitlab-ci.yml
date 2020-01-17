@@ -32,6 +32,6 @@ docker-deploy:
   script:
     - docker build -t flask-demo .
     - if [ $(docker ps -qf "name=web") ];then docker rm -f web;fi
-    - docker run -id -p 5000:500 --name web flask-demo 
+    - docker run -id -p 5000:5000 --name web flask-demo 
   tags:
     - shell
